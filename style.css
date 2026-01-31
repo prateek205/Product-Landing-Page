@@ -7,6 +7,9 @@
 :root {
   --primary-color: #fff;
   --primary-text-transform: uppercase;
+  --primary-width: 80%;
+  --primary-margin: auto;
+  --secondary-width: 100%;
 }
 /* Font Family */
 @font-face {
@@ -29,14 +32,14 @@
 }
 /* Navbar Section */
 .navbar {
-  width: 80%;
-  margin: auto;
+  width: var(--primary-width);
+  margin: var(--primary-margin);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 0px;
-  text-transform: var(--primary-text-transform);
   color: var(--primary-color);
+  text-transform: var(--primary-text-transform);
 }
 .items {
   display: flex;
@@ -54,8 +57,8 @@
 
 /* Hero Section */
 .heroContainer {
-  width: 80%;
-  margin: auto;
+  width: var(--primary-width);
+  margin: var(--primary-margin);
   display: flex;
   align-items: center;
   padding: 50px 0px;
@@ -85,6 +88,56 @@
   justify-content: center;
 }
 #heroImg {
-  width: 100%;
+  width: var(--secondary-width);
 }
 /* Category Section */
+.categoryContainer {
+  width: var(--primary-width);
+  margin: var(--primary-margin);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 10px;
+}
+.catCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 80px 10px;
+}
+#categoryHeading {
+  text-transform: uppercase;
+}
+.categoryCard {
+  width: 25%;
+  height: 420px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px 15px hsla(30, 100%, 80%);
+  padding: 10px;
+  background-color: hsl(30, 100%, 60%);
+  color: var(--primary-color);
+}
+.categoryItems {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+#catTitle {
+  font-size: 18px;
+  text-transform: var(--primary-text-transform);
+  font-family: prateek-heading;
+}
+#catParagraph {
+  text-align: left;
+  font-size: 12px;
+  font-family: prateek-medium;
+}
+
+#catImg {
+  width: var(--secondary-width);
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}

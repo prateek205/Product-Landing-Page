@@ -5,11 +5,20 @@
 }
 /* Global Root */
 :root {
-  --primary-color: #fff;
+  --primary-color: hsl(0, 0%, 0%);
+  --secondary-color: hsl(0, 0%, 50%);
+
   --primary-text-transform: uppercase;
-  --primary-width: 80%;
+  --secondary-text-transform: Capitalize;
+
   --primary-margin: auto;
+
+  --primary-width: 80%;
   --secondary-width: 100%;
+
+  --primary-font-family: prateek-heading;
+  --secondary-font-family: prateek-body;
+  --accent-font-family: prateek-medium;
 }
 /* Font Family */
 @font-face {
@@ -38,8 +47,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 0px;
-  color: var(--primary-color);
   text-transform: var(--primary-text-transform);
+  color: var(--primary-color);
 }
 .items {
   display: flex;
@@ -48,10 +57,10 @@
 }
 .itemList {
   font-size: 15px;
-  font-family: prateek-medium;
+  font-family: var(--accent-font-family);
 }
 #logo {
-  font-family: prateek-heading;
+  font-family: var(--primary-font-family);
   font-weight: 700;
 }
 
@@ -59,7 +68,6 @@
 .heroContainer {
   width: var(--primary-width);
   margin: var(--primary-margin);
-  color: var(--primary-color);
   display: flex;
   align-items: center;
   padding: 50px 0px;
@@ -70,14 +78,15 @@
   gap: 50px;
 }
 #heroHeading {
+  color: var(--primary-color);
   width: 68%;
   font-size: 68px;
   text-transform: var(--primary-text-transform);
-  font-family: prateek-heading;
+  font-family: var(--primary-font-family);
 }
 #heroParagraph {
   width: 80%;
-  font-family: prateek-medium;
+  font-family: var(--accent-font-family);
 }
 .heroImg {
   border-radius: 15px;
@@ -86,9 +95,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 70%;
 }
 #heroImg {
   width: var(--secondary-width);
+  object-fit: cover;
 }
 /* Category Section */
 .categoryContainer {
@@ -107,8 +118,10 @@
   justify-content: space-evenly;
   padding: 80px 10px;
 }
-#categoryHeading {
-  text-transform: uppercase;
+#categoryHeading,
+#feaHeading {
+  text-transform: var(--secondary-text-transform);
+  font-family: var(--primary-font-family);
 }
 .categoryCard {
   width: 25%;
@@ -116,8 +129,6 @@
   border-radius: 20px;
   box-shadow: 0px 0px 25px 15px hsla(30, 100%, 80%);
   padding: 10px;
-  background-color: hsl(30, 100%, 60%);
-  color: var(--primary-color);
 }
 .categoryItems {
   display: flex;
@@ -125,14 +136,17 @@
   gap: 28px;
 }
 #catTitle {
+  color: var(--primary-color);
   font-size: 18px;
-  text-transform: var(--primary-text-transform);
-  font-family: prateek-heading;
+  text-transform: var(--secondary-text-transform);
+  font-family: var(--primary-font-family);
 }
 #catParagraph {
   text-align: left;
   font-size: 12px;
-  font-family: prateek-medium;
+  font-family:var(--accent-font-family);
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 #catImg {
@@ -140,4 +154,10 @@
   height: 250px;
   object-fit: cover;
   border-radius: 20px;
+}
+/* Service Section */
+.featuresContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -76,7 +76,6 @@
   width: 80%;
   font-family: prateek-medium;
 }
-
 .heroImg {
   border-radius: 15px;
   box-shadow: inset 0px 0px 100px 5px hsl(250, 0%, 100%);
@@ -85,7 +84,6 @@
   align-items: center;
   justify-content: center;
 }
-
 img {
   width: 100%;
 }

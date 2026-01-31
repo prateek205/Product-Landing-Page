@@ -6,6 +6,7 @@
 /* Global Root */
 :root {
   --primary-color: #fff;
+  --primary-text-transform: uppercase;
 }
 /* Font Family */
 @font-face {
@@ -34,6 +35,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 0px;
+  text-transform: var(--primary-text-transform);
+  color: var(--primary-color);
 }
 .items {
   display: flex;
@@ -41,14 +44,10 @@
   gap: 40px;
 }
 .itemList {
-  text-transform: uppercase;
   font-size: 15px;
   font-family: prateek-medium;
-  color: var(--primary-color);
 }
 #logo {
-  text-transform: uppercase;
   font-family: prateek-heading;
   font-weight: 700;
-  color: var(--primary-color);
 }

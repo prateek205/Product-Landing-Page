@@ -225,3 +225,57 @@
   text-transform: capitalize;
   font-family: var(--accent-font-family);
 }
+
+@media screen and (max-width: 768px) {
+  /* Hero Section */
+  .mainContainer {
+    height: 1000px;
+  }
+  .heroContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .heroContent {
+    text-align: center;
+  }
+  #heroHeading {
+    width: 100%;
+  }
+  #heroParagraph {
+    width: 100%;
+  }
+
+  /* Category Section */
+  .catCard {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .categoryCard {
+    width: 100%;
+  }
+  #catImg {
+    object-fit: cover;
+  }
+  #catParagraph {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .featureContent,
+  #feaCont1 {
+    flex-direction: column;
+  }
+  #feaParagraph {
+    text-align: center;
+  }
+
+  #feaImg {
+    width: 100%;
+  }
+}

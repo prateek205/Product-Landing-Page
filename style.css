@@ -7,6 +7,7 @@
 :root {
   --primary-color: hsl(0, 0%, 100%);
   --secondary-color: hsl(0, 0%, 50%);
+  --accent-color: hsl(0, 0%, 0%);
 
   --primary-text-transform: uppercase;
   --secondary-text-transform: Capitalize;
@@ -153,7 +154,7 @@
   gap: 28px;
 }
 #catTitle {
-  color: var(--primary-color);
+  color: var(--accent-color);
   font-size: 18px;
   text-transform: var(--secondary-text-transform);
   font-family: var(--primary-font-family);

@@ -5,7 +5,7 @@
 }
 /* Global Root */
 :root {
-  --primary-color: hsl(0, 0%, 0%);
+  --primary-color: hsl(0, 0%, 100%);
   --secondary-color: hsl(0, 0%, 50%);
 
   --primary-text-transform: uppercase;
@@ -73,6 +73,7 @@
   display: flex;
   align-items: center;
   padding: 50px 0px;
+  color: var(--primary-color);
 }
 .heroContent {
   display: flex;
@@ -80,7 +81,6 @@
   gap: 50px;
 }
 #heroHeading {
-  color: var(--primary-color);
   width: 75%;
   font-size: 65px;
   text-transform: var(--primary-text-transform);

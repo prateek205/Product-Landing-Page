@@ -227,6 +227,35 @@
   font-family: var(--accent-font-family);
 }
 
+@media screen and (max-width: 1440px) {
+  /* Hero Section */
+  .mainContainer {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Hero Section */
+  .mainContainer {
+    height: 500px;
+  }
+
+  /* Category Section */
+  .catCard {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .categoryCard {
+    width: 100%;
+  }
+  #catImg {
+    object-fit: cover;
+  }
+  #catParagraph {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Hero Section */
   .mainContainer {
